@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card { @apply bg-white border border-gray-200 rounded-xl p-4 shadow-sm hover:shadow-md transition; }
+  .btn { @apply inline-flex items-center justify-center px-3.5 py-2 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition; }
+  .btn-ghost { @apply inline-flex items-center justify-center px-3.5 py-2 rounded-lg bg-transparent text-gray-700 hover:bg-gray-100 transition; }
+  .input { @apply w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:ring-4 focus:ring-blue-200 focus:border-blue-500; }
+  .label { @apply text-sm font-medium text-gray-700 mb-1; }
+}
