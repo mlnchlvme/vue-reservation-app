@@ -6,7 +6,6 @@ import { useAuthStore } from '../stores/auth'
 const Home = () => import('../views/HomeView.vue')
 const Login = () => import('../views/auth/LoginView.vue')
 const Register = () => import('../views/auth/RegisterView.vue')
-const VerifyEmail = () => import('../views/auth/VerifyEmailView.vue')
 const Me = () => import('../views/user/MeView.vue')
 
 
@@ -27,7 +26,6 @@ routes: [
 
 { path: '/login', name: 'login', component: Login, meta: { guestOnly: true } },
 { path: '/register', name: 'register', component: Register, meta: { guestOnly: true } },
-{ path: '/verify-email/:token', name: 'verify', component: VerifyEmail },
 
 
 { path: '/me', name: 'me', component: Me, meta: { requiresAuth: true } },
